@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rustique Resume</title>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!--Montserrat font-->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css" />
+    <script src="https://unpkg.com/feather-icons@4.28.0/dist/feather.min.js"></script>
+  </head>
+  <body>   
+    <section>
+      <!-- MOBILE NAVIGATION -->
+      <!--HIDE CURRICULUM VITAE LINK FOR NOW-->
+      <!--<div class="w3-container w3-padding-16 w3-border-bottom w3-hide-medium w3-hide-large">
+        <a href="#home" class="w3-bar-item w3-button w3-hover-none">LINKS</a>-->
+        <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="toggleNavigation()">&#9776;</a>
+      </div>
+      <div id="mobile-nav" class="w3-bar-block w3-hide w3-hide-large w3-hide-medium w3-sticky">
+        <a href="#about" class="w3-bar-item w3-button w3-center w3-hover-none w3-border-white w3-bottombar w3-hover-border-green w3-hover-text-green" onclick="toggleNavigation()">ABOUT</a>
+        <a href="#resume" class="w3-bar-item w3-button w3-center w3-hover-none w3-border-white w3-bottombar w3-hover-border-green w3-hover-text-green" onclick="toggleNavigation()">RESUME</a>
+        <a href="./codesterust.html" class="w3-bar-item w3-button w3-center w3-hover-none w3-border-white w3-bottombar w3-hover-border-green w3-hover-text-green" onclick="toggleNavigation()"">CODESTERUST</a>
+        <a href="#contact" class="w3-bar-item w3-button w3-center w3-hover-none w3-border-white w3-bottombar w3-hover-border-green w3-hover-text-green" onclick="toggleNavigation()">CONTACT</a>
+      </div>
+
+      <!-- SOCIAL SECTION -->
+      <section class="image-section w3-quarter w3-fixed w3-padding-small">
+        <!--IMAGE/AVATAR-->
+        <img id="changing-image" src="rustavatar.png" class="w3-circle w3-border w3-border-sand" style="border-width: 0px !important;"/>
+        <!--SOCIAL NETWORK BUTTONS-->
+        <div class="links w3-margin-top w3-padding-small">
+          <!--DON'T NEED FACEBOOK, INSTA, OR TWITTER
+          <a class="icon-link w3-text-sand w3-hover-text-amber" href="#facebook" target="_blank">
+              <i data-feather="facebook"></i>
+          </a>
+          <a class="icon-link w3-text-sand w3-hover-text-amber" href="#insta" target="_blank">
+             <i data-feather="instagram"></i>
+          </a>
+          <a class="icon-link w3-text-sand w3-hover-text-amber" href="#twitter" target="_blank">
+             <i data-feather="twitter"></i>
+          </a>-->
+          <a class="icon-link w3-text-sand w3-hover-text-green" href="https://www.linkedin.com/in/frustique/" target="_blank">
+             <i data-feather="linkedin"></i>
+          </a>
+        </div>
+        <!--RESUME DOWNLOAD BUTTON-->
+        <div class="w3-container w3-padding-16">
+          <a href="./RUSTIQUE_Resume_Aug2023.pdf" class="w3-green w3-hover-green w3-button w3-round-small w3-hover-red w3-padding-large" target="_blank" download="resume.pdf">
+            <i data-feather="arrow-down" style="vertical-align: -0.35em;"></i>
+            <span class="w3-margin-left download-text">DOWNLOAD RESUME</span>
+          </a>
+        </div>
+      </section>
+
+      <!--CV CONTENT SECTION-->
+      <section class="w3-threequarter w3-padding-large w3-right">
+        <!--DESKTOP NAVIGATION-->     
+        <div class="w3-container w3-padding-large w3-border-bottom w3-hide-small">
+          <!--DON'T NEED CURRICULUM VITAE LINK
+          <a href="#home" class="w3-bar-item w3-button w3-hover-none w3-border-white w3-bottombar w3-hover-border-green">CURRICULUM VITAE</a>--> 
+          <a href="#contact" class="w3-bar-item w3-button w3-hover-none w3-border-white w3-bottombar w3-hover-border-green w3-hover-text-green w3-right w3-hide-small" style="border-width: 2px !important;" onclick="toggleNavigation()">CONTACT</a>
+          <a href="./codesterust.html" class="w3-bar-item w3-button w3-hover-none w3-border-white w3-bottombar w3-hover-border-green w3-hover-text-green w3-right w3-hide-small" style="border-width: 2px !important;" onclick="toggleNavigation()">CODESTERUST</a>
+          <a href="#resume" class="w3-bar-item w3-button w3-hover-none w3-border-white w3-bottombar w3-hover-border-green w3-hover-text-green w3-right w3-hide-small" style="border-width: 2px !important;" onclick="toggleNavigation()">RESUME</a>
+          <a href="#about" class="w3-bar-item w3-button w3-hover-none w3-border-white w3-bottombar w3-hover-border-green w3-hover-text-green w3-right w3-hide-small" style="border-width: 2px !important;" onclick="toggleNavigation()">ABOUT</a>
+        </div>
+        <div class="content-container w3-margin-top-2">
+          <!--HOME SECTION-->
+          <div id="home" class="home w3-container w3-margin-top-4 w3-cursive">
+            <p style="font-style: italic; font-size:x-large;">"I get gratification when things I do are effective."</p>
+            <h1>Felicito Rustique, Jr.</h1>
+            <h3>Web & Software Development | Content Design & Management</h3>
+          </div>
+
+          <!--ABOUT SECTION-->
+          <div id="about" class="w3-container w3-margin-top-20-percent w3-cursive w3-medium">
+          <!--BEGIN ANIMATION OVER ENTIRE CV CONTENT SECTION-->
+          <div class="horizontalRectangle"></div>
+          <!--END ANIMATION OVER ENTIRE CV CONTENT SECTION-->
+            <h2 class="w3-border-bottom w3-border-green" style="border-width: 3px !important;">ABOUT</h2>
+            <div class="verticalRectangle"></div>
+            <p class="w3-margin-top-2"> 
+              I am currently a Mass Communication Specialist (MC) in the US Navy.
+            </p>
+            <p class=""> 
+              For the past 20 years I've been involved in digital media production for classified and releasable public affairs products.</p> 
+            <p class="">  
+              I've produced content in areas of photojournalism, news writing, videography & editing, still & motion graphic design, social media engagement and desktop publishing.
+            </p>
+            <p class=""> 
+              During my years of service, while stationed around the world and deploying at sea, I became curious to learn about websites, their coding procedures and designs, and how they function. I began taking various courses on front and back-end programming languages, and continue to do so.
+            </p>
+            <p class=""> 
+              In whatever way I can support, I want to build and manage websites, applications and content in creative, technically sound ways. By doing so, I hope to continually learn and progress into a full-stack engineer.
+            </p>
+            <p class=""> 
+              I am a capable, quick learner and believe strongly in my ability to adapt to any work environment. Whether individually or in a team, I believe that success happens when you know when to lead as well as when to follow.
+            </p>
+          <!--END ABOUT SECTION-->  
+          </div>
+          <!--RESUME-->
+          <div id="resume" class="w3-container w3-margin-top-20-percent w3-cursive">
+          <!--HOME SECTION-->
+          <!--BEGIN ANIMATION OVER ENTIRE CV CONTENT SECTION-->
+          <div class="horizontalRectangle"></div>
+          <!--END ANIMATION OVER ENTIRE CV CONTENT SECTION-->
+            <h2 class="w3-border-bottom w3-border-green" style="border-width: 3px !important;">RESUME</h2>
+            <div class="verticalRectangle"></div>
+            <div class="w3-container w3-margin-top-2 w3-cursive">
+              <h3 class="w3-border-amber"style="margin-top: 20px;">SUMMARY</h3>
+              <p class=""> 
+               Highly adaptive and versatile, US Navy veteran with 20 years of worldwide content production for public affairs, ready to build and manage websites, their applications and content.</p>
+            </div>
+              <!--SKILLS-->
+              <h3 class="w3-border-amber" style="margin-top: 30px;">SKILLS</h3>
+              <div class="">
+                <ul class="w3-ul" style="font-weight: 500; list-style-type: disc; margin-left: 20px;">
+                  <li><b>Programming:</b> Web, database, and software development with HTML, CSS, JavaScript, PHP, SQL, Java, Python, C++</li>
+                  <li><b>Software:</b> Adobe CC (Photoshop, Illustrator, Premiere, Lightroom, InDesign, After Effects, Dreamweaver), VS Code, Python IDLE, NetBeans, Eclipse, Jupyter Notebook, IBM Watson Cognos, Ableton, Maschine, Final Cut, Reason, Microsoft Office </li>
+                  <li><b>Multimedia:</b> Content management and production through photojournalism, videography, editing, news writing, layout & design, still & motion graphics, audio production, social media campaigns and public relations messaging</li>
+                  <li><b>Management:</b> Supervisory roles for team coordination, job delegation and tracking for timely, public affairs products</li>
+                  <li><b>Certificates:</b> Coursera - IBM Data Analyst Professional Certificate, IBM SkillsBuild - Cybersecurity Fundamentals, Web Development Fundamentals</li> 
+                </ul>
+              </div>
+              <!--EXPERIENCE SECTION-->                
+              <h3 class="w3-border-amber" style="margin-top: 30px;">RECENT EXPERIENCE</h3>
+              <div class="">
+          <!--BEGIN ANIMATION OVER ENTIRE CV CONTENT SECTION-->
+          <div class="verticalRectangle"></div>
+          <!--END ANIMATION OVER ENTIRE CV CONTENT SECTION-->
+                <h4>Mass Communication Specialist - US Navy</h4>
+                <p style="text-align: left; margin-top: -10px;"><i>Coronado, CA | March 2022 - Present</i></p>
+                <ul class="w3-ul" style="font-weight: 500; list-style-type: disc; margin-left: 20px;">
+                  <li>Assigned to Naval Special Warfare Command (NSWC)</li>
+                  <li>Manager and editor for web pages on command's internal, Microsoft SharePoint portal</li>
+                  <li>Site manager and designer for public-facing website, <a class="w3-text-green w3-hover-border-green w3-hover-text-green" href="https://www.nsw.navy.mil" target="_blank">nsw.navy.mil</a></li>
+                </ul>
+              </div>
+              <div class="">
+                <h4>Student - California Institute of Arts & Technology (CIAT)</h4>
+                <p style="text-align: left; margin-top: -10px;"><i>San Diego, CA | May 2021 - Feb 2022</i></p>
+                <ul class="w3-ul" style="font-weight: 500; list-style-type: disc; margin-left: 20px;">
+                  <li><b>Fundamentals of Software Design with Python</b> - Created Python program prompting users to correctly list U.S. state capitals: <a class="w3-text-green w3-hover-border-green w3-hover-text-green" href="https://replit.com/@STYSL/Capital-Quiz">replit.com/@STYSL/Capital-Quiz</a></li>
+                  <li><b>Object Oriented Programming (OOP) with C++</b> - Completed C++ coding assignments utilizing stream and file i/o operations, data type manipulation, and function and class definitions: <a class="w3-text-green w3-hover-border-green w3-hover-text-green" href="https://github.com/STYSL/C-Plus-Assignments" target="_blank">github.com/STYSL/C-Plus-Assignments</a></li>
+                  <li><b>RDBM Systems and SQL</b> - Created relational databases & queries using SQL commands w/ Microsoft SQL Server.</li>
+                  <li><b>Front-End Web Development</b> - Designed & coded personal website using HTML, CSS, and JavaScript to showcase self-produced digital content and web development skills: <a class="w3-text-green w3-hover-border-green w3-hover-text-green" href="https://stysl.github.io" target="_blank">stysl.github.io</a></li>
+                  <li><b>PHP & MySQL</b> - Utilized PHP to process HTML forms, output results, and store, modify & recall information in MySQL databases: <a class="w3-text-green w3-hover-border-green w3-hover-text-green" href="https://github.com/STYSL/PHP-MySQL" target="_blank">github.com/STYSL/PHP-MySQL</a></li>
+                  <li><b>Python Fundamentals & Best Practices</b> - Developed GUI applications & image-processing algorithms w/ functions and class definitions: <a class="w3-text-green w3-hover-border-green w3-hover-text-green" href="https://github.com/STYSL/ASD210" target="_blank">github.com/STYSL/ASD210</a></li>
+                  </ul>
+              </div>
+              <!--PAST WORK SECTION-->                
+              <h3 class="w3-border-amber" style="margin-top: 30px;">PAST WORK HISTORY</h3>
+              <div class="">
+          <!--BEGIN ANIMATION OVER ENTIRE CV CONTENT SECTION-->
+          <div class="verticalRectangle"></div>
+          <!--END ANIMATION OVER ENTIRE CV CONTENT SECTION-->
+              <div class="">
+                <h4>Mass Communication Specialist - US Navy</h4>
+                <p style="text-align: left; margin-top: -10px;"><i>Coronado, CA | Jul 2018 - Mar 2022</i></p>
+                <ul class="w3-ul" style="font-weight: 500; list-style-type: disc; margin-left: 20px;">
+                  <li>Assigned to Navy Public Affairs Support Element (NPASE) West</li>
+                  <li>Managed a department of 25 Sailors in administrative, training and job tasking for public affairs products</li>
+                  <li>Deployed aboard USS John C. Stennis, USS Carl Vinson and USS America coordinating timely production, management and release of media products including articles, photos, videos, graphics, and publications</li>
+                </ul>
+              </div>
+              <div class="">
+                <h4>Mass Communication Specialist - US Navy</h4>
+                <p style="text-align: left; margin-top: -10px;"><i>Philadelphia, PA | Jun 2015 - Jun 2018</i></p>
+                <ul class="w3-ul" style="font-weight: 500; list-style-type: disc; margin-left: 20px;">
+                  <li>Assigned to Navy Recruiting District (NRD) Philadelphia</li>
+                  <li>Acting public affairs officer covering southern New Jersey, Maryland, Delaware and Philadelphia</li>
+                  <li>Coordinated setup and coverage of major recruiting events and media engagements</li>
+                  <li>Managed command social media pages and produced post content</li>
+                </ul>
+              </div>
+              <div class="">
+                <h4>Mass Communication Specialist - US Navy</h4>
+                <p style="text-align: left; margin-top: -10px;"><i>Manama, Bahrain | May 2013 - May 2015</i></p>
+                <ul class="w3-ul" style="font-weight: 500; list-style-type: disc; margin-left: 20px;">
+                  <li>Assigned to Commander, U.S. Navy Forces Central Command (NAVCENT)</li>
+                  <li>Produced and handled both classified and released public affairs products in support of Operation Enduring Freedom (OEF) and Operation Inherent Resolve (OIR)</li>
+                  <li>Managed command social media pages on FB, Twitter, and Flickr, and designed command website</li>
+                </ul>
+              </div>
+              <div class="">
+                <h4>Mass Communication Specialist - US Navy</h4>
+                <p style="text-align: left; margin-top: -10px;"><i>Naples, Italy | Feb 2010 - Apr 2013</i></p>
+                <ul class="w3-ul" style="font-weight: 500; list-style-type: disc; margin-left: 20px;">
+                  <li>Assigned to Navy Public Affairs Support Element (NPASE) East Det. Europe</li>
+                  <li>Supervised expeditionary public affairs teams and provided visual information support with releasable photos, videos, and news articles for base newspaper, U.S. 6th Fleet, European Command (EUCOM) operations, and Africa Partnership Station (APS) and Phoenix Express exercises</li>
+                  <li>Deployed to Norway and aboard USS Gunston Hall, USS Simpson, USS Mount Whitney, and USS Swift to Greece, Mauritius, Israel, Cabo Verde, Ghana, and Nigeria</li>
+                </ul>
+              </div>
+              <div class="">
+                <h4>Mass Communication Specialist - US Navy</h4>
+                <p style="text-align: left; margin-top: -10px;"><i>Norfolk, VA | Jan 2007 - Jan 2010</i></p>
+                <ul class="w3-ul" style="font-weight: 500; list-style-type: disc; margin-left: 20px;">
+                  <li>Assigned to USS Harry S. Truman (CVN 75)</li>
+                  <li>Completed video-related jobs ranging from high-paced video stories to briefs, ceremonies and DVD creation</li>
+                  <li>Lead video editor and show intro creator for ship's weekly newscast</li>
+                  <li>Trained media department Sailors on basic camera operation, shooting, scripting, and editing for video</li>
+                  <li>Produced command studio portraits and photographed shipboard operations for release to major news outlets</li>
+                </ul>
+              </div>
+              <div class="">
+                <h4>Mass Communication Specialist - US Navy</h4>
+                <p style="text-align: left; margin-top: -10px;"><i>Misawa, Japan | Nov 2004 - Dec 2006</i></p>
+                <ul class="w3-ul" style="font-weight: 500; list-style-type: disc; margin-left: 20px;">
+                  <li>Assigned to Armed Forces Network (AFN) Detachment 12</li>
+                  <li>Provided command information, news, sports and entertainment to multi-service audience of 13,500 personnel</li>
+                  <li>Operated complex digital broadcast, videography, editing systems, cameras and lighting equipment</li>
+                  <li>Produced weekly radio and video news stories and newscasts for air on local, regional and global networks</li>
+                </ul>
+              </div>
+              <!--EDUCATION SECTION-->
+              <h3 class="w3-border-amber" style="margin-top: 30px; margin-bottom: -5px">EDUCATION</h3>
+              <div class="">
+          <div class="verticalRectangle"></div>
+          <!--END ANIMATION OVER ENTIRE CV CONTENT SECTION-->
+          <!--HOME SECTION-->
+                <ul class="w3-ul" style="font-weight: 500; list-style-type: disc; margin-left: 20px;">
+                  <li><h6><b>California Institute of Arts & Technology (CIAT)</b></h6>
+                  <p style="text-align: left; margin-top: -10px;">
+                  Certificate Software Development | <i>May 2021 – Feb 2022</i></p></li>
+                  <li style="margin-top: -20px"><h6><b>University of California-Irvine (UCI) Extension</b></h6>
+                  <p style="text-align: left; margin-top: -10px;">
+                  Java Programming Certificate | <i>Sep 2015 – Mar 2017</i></p></li>
+                  <li style="margin-top: -20px"><h6><b>University of Maryland University College (UMUC)</b></h6>
+                  <p style="text-align: left; margin-top: -10px;">
+                  B.A. Digital Media & Web Technologies | <i>Aug 2010 – May 2013</i></p></li>
+                  <li style="margin-top: -20px"><h6><b>Defense Information School (DINFOS)</b></h6>
+                  <p style="text-align: left; margin-top: -10px;">
+                  News Writing, Photojournalism, Video and Broadcast | <i>Mar 2004 – Nov 2004</i></p></li>
+                  <li style="margin-top: -20px"><h6><b>New York University (NYU)</b></h6>
+                  <p style="text-align: left; margin-top: -10px;">
+                  B.A. Music Technology | <i>Sep 1996 – May 2000</i></p></li>
+                </ul>
+              </div>
+              <!-- HOBBIES/LIKES -->
+              <div class="w3-container w3-margin-top-2 w3-cursive" style="margin-top: 10px;">
+                <h3 class="w3-border-amber">HOBBIES & INTERESTS</h3>
+                <p class=""> 
+                "Back in the day" and every now and then, I enjoyed making <a class="w3-text-green w3-hover-border-green w3-hover-text-green" href="https://open.spotify.com/artist/5pfjq4dgtPjUki1DnwGJJ4?si=i8tfRI1bQBWQd1lfenHMlw" target="_blank">music</a>. 
+                Whether it's from playing a drumset, using a drum machine or music hardware/software, I appreciate good beats and good sounds. I like the 80s and 90s because that's when I grew up. My wife and kids are my best friends so I like hanging out with them.</p>
+              </div>
+<!-- EXAMPLE SECTIONS. SAVE FOR LATER REFERENCE
+              <div class="">
+                <h4>Social Community Manager at the Company-Y</h4>
+                <p>January 2017 - June 2020 </p>
+                <ul class="w3-ul" style="font-weight: 500;">
+                  <li>Ensured that audience growth rate is in increase through social networs</li>
+                  <li>Managed social media campaigns for various social media platforms to align with marketing strategies</li>
+                  <li>Monitored and provided feedback on engagement/conversation via social media channels to leadership</li>
+                </ul>
+              </div>
+              <div class="">
+                <h4>Social Community Manager at the Company-Z</h4>
+                <p>January 2014 - April 2016 </p>
+                <ul class="w3-ul" style="font-weight: 500;">
+                  <li>Organized and managed community events to boost brand awareness</li>
+                  <li>Monitored, tracked and reported on feedback and online reviews</li>
+                  <li>Provided engaging text, image and video content for all social media and professional accounts</li>
+                </ul>
+              </div>
+            <div class="w3-container w3-margin-top-2 w3-cursive">
+              <h3 class="w3-border-amber">MY EDUCATION</h3>
+                <h4>College diploma, College of management, Houston</h4>
+                <p>October 2008 - July 2013 </p>
+                <h4>Highschool diploma, XYZ Highschool, Houston</h4>
+                <p>October 2004 - July 2008 </p>
+            </div>
+            <div class="w3-container w3-margin-top-2 w3-cursive">
+              <h3 class="w3-border-amber">MY SKILLS</h3>
+              <!--SOFT SKILLS             
+              <h4>Soft skills</h4>
+              <ul class="w3-ul" style="font-weight: 500;">
+                <li>I have excelent communication skill and confidence in front of an audience</li>
+                <li>I have a talent for investigating and researching different processes to offer different improvements and solution for the benefit of the organization </li>
+                <li>Provided engaging text, image and video content for all social media and professional accounts</li>
+              </ul>
+              <h4>Technical skills</h4>
+                <ul class="w3-ul" style="font-weight: 500;">
+                  <li>I have a great experience with MS Office tools</li>
+                  <li>I am proficient in technical writing</li>
+                  <li>Provided engaging text, image and video content for all social media and professional accounts</li>
+                </ul>
+            </div>
+            <!--INTERESTS SECTION
+            <div class="w3-container w3-margin-top-2 w3-cursive">
+              <h3 class="w3-border-amber">HOBBIES AND INTERESTS</h3>
+                <ul class="w3-ul" style="font-weight: 500;">
+                  <li>I love mountain hiking and cycling in my free time</li>
+                  <li>I like to play board games with other people</li>
+                </ul>
+            </div>
+            <!--REFERENCE SECTION
+            <div class="w3-container w3-margin-top-2 w3-cursive">
+              <h3 class="w3-border-amber">MY REFERENCES</h3>
+              <h4>Jane Doe, CEO at Company-Z</h4>
+              <ul class="w3-ul" style="font-weight: 500;">
+                <li>+0123456789</li>
+                <li>janedoe@companyz.com</li>
+              </ul>
+              <h4>Margaret Johnson, Manager at Company-Y</h4>
+              <ul class="w3-ul" style="font-weight: 500;">
+                <li>+9876543210</li>
+                <li>mjohnson@companyy.com</li>
+              </ul>
+            </div>            
+          </div>
+-->
+          <!--CONTACT SECTION-->
+          <div id="contact" class="w3-container w3-margin-top-20-percent w3-cursive">
+          <!--BEGIN ANIMATION OVER ENTIRE CV CONTENT SECTION-->
+          <div class="horizontalRectangle"></div>
+          <!--END ANIMATION OVER ENTIRE CV CONTENT SECTION-->
+          <!--HOME SECTION-->
+            <h2 class="w3-border-bottom w3-border-green" style="border-width: 3px !important;"> CONTACT / LINKS</h3>
+            <div class="verticalRectangle"></div>
+            <div class="w3-margin-top-2" style="font-weight: 500;">
+              <p><b>Name:</b> Felicito A. Rustique, Jr.</p>
+              <p><b>Adress:</b> San Diego, CA</p>
+              <!--<p>Phone number: +0123456789</p>-->
+              <p><b>E-mail:</b> stysl.rise@gmail.com</p>
+              <p class="w3-text-green"><a class="w3-hover-border-green w3-hover-text-green" href="https://lindedin.com/in/frustique" target="_blank">LINKEDIN.COM/IN/FRUSTIQUE</a></p>
+              <p class="w3-text-green"><a class="w3-hover-border-green w3-hover-text-green" href="https://rustique.w3spaces.com" target="_blank">RUSTIQUE.W3SPACES.COM</a></p>
+              <!--<p class="w3-text-green"><a class="w3-hover-border-green w3-hover-text-green" href="https://stysl.github.io" target="_blank">STYSL.GITHUB.IO</a></p>-->
+              <p class="w3-text-green"><a class="w3-hover-border-green w3-hover-text-green" href="https://github.com/stysl" target="_blank">GITHUB.COM/STYSL</a></p>
+              <p class="w3-text-green"><a class="w3-hover-border-green w3-hover-text-green" href="https://replit.com/@stysl" target="_blank">REPLIT.COM/@STYSL</a></p>
+            </div>
+          </div>
+
+        <!--FOOTER-->
+        <!-- Footer. This section contains an ad for W3Schools Spaces. You can leave it to support us. -->
+        <footer class="w3-container w3-border-top w3-center w3-margin-top-4">
+          <p>© 2023 - F. Rustique, Jr.</p>
+           <p class="w3-small">I made this webpage with W3schools Spaces. Make your own free website today!</p>
+          <a class="w3-button w3-round-xxlarge w3-small w3-light-grey" href="https://www.w3schools.com/spaces" target="_blank">Start now</a> 
+        <!-- End footer -->
+        </footer>
+
+        <!--END OF CV SECTION-->
+      </section>      
+    </section>
+    <script>
+      // Function to toggle mobile navigation
+      function toggleNavigation() {
+        let nav = document.getElementById("mobile-nav");
+        if (nav.classList.contains('w3-show')) {
+          nav.classList.remove('w3-show');
+        } else { 
+          nav.classList.add('w3-show');
+        }
+      }
+    </script>
+    <script>
+      // Script to load feather icons
+      feather.replace()
+    </script>
+  </body>
+</html>

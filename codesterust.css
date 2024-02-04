@@ -1,0 +1,361 @@
+body {
+    display: flex;
+    position: relative; /*makes footer (when position: absolute) position itself relative to the body*/
+    font-family: 'Nunito Sans', sans-serif;
+    flex-direction: column;
+    text-align: center;
+    height: auto;
+    width: 100%;
+    margin: 0;
+    overflow-x: hidden;
+    overflow-y: auto;
+    padding-bottom: 20vh; /*prevents footer from overlapping the <body> content. Should at least equal footer height*/
+}
+
+#bodyText {
+    font-size: 16px;
+    text-align: center;
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+    /*padding-left: 20px;*/
+}
+
+header {
+    position: relative; /* establishes a positioning context */
+    width: 100%; /* Full width */
+    height: 5vh;
+    background-color: #222222; /* Dark grey background */
+    color: #fff; /* White text */
+    padding: 15px;  /* Space around the content */
+    text-align: center; /* Center the text */
+    top: 0; /* Stick to the top */
+    margin-bottom: 0px;
+    display: flex; /* Use Flexbox & next 3 properties */
+    flex-direction: column;
+    align-items: center; /* Center items vertically */
+    justify-content: center; /* Center items horizontally */
+}
+
+#bannerTitle {
+    position: absolute; /* Position absolutely within the header */
+    padding-top: 20px;
+    width: 100%;
+    height: 100%; /* Full height */
+    text-align: center; /* Center the text */
+    font-size: 2.5em;
+    font-style: italic;
+    font-weight: 900;
+    font-variation-settings:
+    "wdth" 87.5,
+    "YTLC" 500;
+    z-index: 98;
+}
+
+#rightNav {
+    position: absolute; /* Position absolutely within the header */
+    top: 0; /* Align with the top of the header */
+    right: 0; /* Align with the right edge of the header */
+    width: 90px;
+    height: 100%; /* Full height */
+    background-color: darkgreen;
+}
+
+nav {
+    position: absolute; /* Position absolutely within the header */
+    bottom: 0; /* Align with the bottom of the header */
+    right: 45px; /* Right edge of <nav> will be 50px away from right edge of parent element */
+    z-index: 99;
+}
+
+nav ul {
+    list-style-type: none;
+    font-size: 0.5em;
+    padding: 0px;
+}
+
+nav ul li i {
+    font-size: 25px; /* Adjust as needed */
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    padding: 0px;
+    margin: 0px;
+    border-radius: 5px;
+}
+
+nav ul li a:hover,
+nav ul li a:active,
+.collapsible:hover,
+ .collapsible:active {
+    color: darkgreen
+}
+
+.bi:hover, .bi:active, .bi:focus{
+    color:#222222;
+}
+
+footer {
+    background-color: #222222; /* Dark grey background */
+    color: #fff; /* White text */
+    padding: 20px; /* Space around the content */
+    text-align: center; /* Center the text */
+    position: fixed;  /*Fix the position */
+    /*position: absolute;  /* Position relative to the nearest positioned ancestor */
+    width: 100%; /* Full width */
+    height: 5vh;
+    bottom: 0; /* Stick to the bottom */
+    display: flex; /* Use Flexbox */
+    align-items: center; /* Center items vertically */
+    justify-content: center; /* Center items horizontally */
+}
+
+#videoBanner {
+    text-align: left;
+    background-color:gold;
+    padding-top: 2px;
+    padding-bottom: 2px;
+}
+
+#videoBanner h3, #videoBanner p {
+    display: inline;
+}
+
+#videoLink {
+    margin: 0px;
+    width: 100px;
+    font-size: 14pt;
+    text-align: center;
+    background-color: goldenrod;
+    padding: 2px 5px 0px 10px;
+}
+
+#videoLink a {
+    color:#222222;
+    text-decoration: none;
+}
+
+#videoLink a:hover {
+    color: darkgreen;
+}
+
+#videoLink a:active, #videoLink a:focus {
+    color:#222222;
+    text-decoration: none;
+}
+
+#top {
+    width: 85%;
+    margin: 10px auto;
+    height: auto;
+    border: 2px solid rgb(224, 224, 224);
+}
+
+.rowTopics {
+    display: flex;
+    width: 360px;
+    margin: 0 auto;
+    flex-direction: row;
+    /*justify-content: space-between;  Optional: Add some space between the headers */
+}
+
+h2 {
+    font-size: 14pt;
+    text-align: left;
+    background-color: darkseagreen;
+    padding: 2px 10px;
+}
+
+#displayArea {
+    display: flex;
+    flex-direction: column;
+    width: 75%;
+    height: auto;
+    margin-top: 0px;
+    margin-left: auto; 
+    margin-right: auto; 
+    /*background-color: #222222;
+    border:rgb(62, 62, 62) solid 1px;*/
+}
+
+#counterExample, #percentExample, #timerExample {
+    display: none;
+}
+
+section {
+    display: flex;
+    width: 85%;
+    margin-top: 15px;
+    margin-left: auto; 
+    margin-right: auto; 
+    background-color: #222222;;
+}
+
+.block-container {
+    flex: 1;
+    background-color: rgb(152, 152, 152);
+    border:rgb(62, 62, 62) solid 1px;
+    margin: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+}
+
+.inline-div {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+#numberInput, #floatInput, #percentInput {
+    width: 35%;
+    font-size: 30px;
+    text-align: center;
+    overflow-x: auto;
+    margin: 0;
+}
+
+#hrsInput, #minsInput, #secsInput {
+    width: 50%;
+    font-size: 30px;
+    text-align: center;
+    margin: 0;
+}
+
+#countButtons {
+    flex: 1;
+    background-color:#707070;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 10px;
+    font-size: 50px;
+    text-align: center;
+}
+
+.jsButtons {
+    flex: 1;
+    width: 20%;
+    padding: 10px;
+    margin: 5px;
+    font-size: medium;
+}
+
+.jsButtons:hover {
+    background-color: #565656;
+}
+
+.jsButtons:active {
+    background-color: #222222;
+}
+
+#reset1Button, #reset2Button {
+    flex: 1;
+    width: 25%; 
+    margin-top: 20px; 
+    margin-bottom: 15px;
+    padding: 10px; 
+    background-color: rgb(41, 147, 67);
+}
+
+#percentButton, #timerButton {
+    flex: 1;
+    font-size: 0.7em;
+    width: 25%; 
+    margin: 15px;
+    margin-bottom: 40px; 
+    padding: 10px; 
+    background-color: rgb(41, 147, 67);
+}
+
+#pauseButton, #resumeButton, #resetTimerButton {
+    flex: 1;
+    background-color: rgb(41, 147, 67);
+}
+
+#reset1Button:hover, #reset2Button:hover, #percentButton:hover, #timerButton:hover,
+#pauseButton:hover, #resumeButton:hover, #reset3Button:hover {
+    background-color: #565656;;
+}
+
+#reset1Button:active, #reset2Button:active, #percentButton:active, #timerButton:active,
+#pauseButton:active, #resumeButton:active, #reset3Button:active {
+    background-color: #222222;
+}
+
+
+/*BEGIN MEDIA QUERIES*/
+
+@media only screen and (min-width: 800px) {
+    section {
+        width: 75%;
+    }
+}
+
+/* For mobile devices with max-width 1024px (like iPad, iPad Mini, large tablets) */
+@media only screen and (max-width: 1024px) {
+    #banner {
+        padding-right: 0px;
+    }
+}
+
+/* For mobile devices with max-width 768px (like iPhone 6/7/8 Plus, iPhone X, small tablets) */
+@media only screen and (max-width: 768px) {
+    #banner {
+        padding-right: 0px;
+    }
+}
+
+/* For mobile devices with max-width 443px */
+@media only screen and (max-width: 443px) {
+    header {
+        width: 100%; /* Full width */
+        padding: 0px;
+        height: 7vh;
+    }
+
+    #bannerTitle {
+        font-size: 2.25em;
+    }
+
+    #rightNav {
+        width: 50px;
+        height: 100%;
+    }
+
+    nav {
+        right: 12px;
+    }
+
+    #videoBanner {
+        padding-top: 0px;
+        padding-bottom: 0px;
+    }   
+
+    .rowTopics {
+        width: 50%;
+        flex-direction: column;
+        justify-content: space-between;  /*Optional: Add some space between the headers */
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-height: 430px) and (orientation: landscape) {
+    header {
+        padding: 0px;
+        height: 15vh;
+    }
+
+    #rightNav {
+        width: 50px;
+        height: 100%;
+    }
+
+    nav {
+        right: 12px;
+    }
+
+}
+
+
+
+

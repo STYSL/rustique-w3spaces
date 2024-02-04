@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>CODESTERUST</title>
+        <link rel="stylesheet" href="codesterust.css">
+        <!--embed for Google Font Family: Nunito Sans-->
+        <!--preconnect speeds up loading of fonts-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap" rel="stylesheet">
+        <!--end embed for Google Font Family: Nunito Sans-->
+        <!--link to use bootstrap icons-->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+        <script src="sectionDisplayer.js" async></script>
+        <script src="counter.js" async></script>
+        <script src="percenter.js" async></script>
+        <script src="timer.js" async></script>
+    </head>
+    <body>
+        <header><h1 id="bannerTitle">CODESTERUST</h1>
+            <div id="rightNav">
+                <nav id="navigation">
+                <ul>
+                    <li><a href="https://rustique.w3spaces.com"><i class="bi bi-house-fill"></i></a></li>
+                </ul>
+                </nav>
+            </div>
+        </header>
+        <div id="videoBanner">
+            <h3 id="videoLink"><a href="https://www.youtube.com/watch?v=dr1xKWksBGA&list=PLLTJQKCxJsKuhPbYzmd_3H_pdfswv4wtF">Videos</a></h3>
+        </div>
+        <div id="top">
+            <p id="bodyText">These "demos" utilize self-coded JavaScript functions <span style="font-style: italic">(with the help of GitHub Copilot)</span> to demonstrate my programming abilites:</p>
+            <!--BEGIN ROW TOPICS-->
+            <div class="rowTopics">
+                <h2 class="collapsible"><i class="bi bi-caret-right-fill"></i>Counter</h2>
+                <h2 class="collapsible"><i class="bi bi-caret-right-fill"></i>Percentage</h2>
+                <h2 class="collapsible"><i class="bi bi-caret-right-fill"></i>Timer</h2>       
+            </div> 
+            <!--END ROW TOPICS-->
+        </div>
+<!--BEGIN DISPLAY AREA-->
+        <div id="displayArea">
+            <!--BEGIN COUNTER EXAMPLE-->
+            <section id="counterExample">
+            <!--<section class="content">-->
+                <div class="block-container">
+                    <div>
+                        <h4 style="margin-bottom: 5px">Enter a whole number:</h4>
+                        <input type="number" id="numberInput" value="">
+                    </div>
+                    <h5 style="margin-bottom: 5px; padding: 5px; text-align: center">Click a button to count by the indicated number:</h5>
+                    <div id="countButtons">
+                        <div>
+                            <button class="jsButtons" onclick="plus1()">+1</button>
+                            <button class="jsButtons" onclick="plus2()">+2</button>
+                            <button class="jsButtons" onclick="plus3()">+3</button>
+                        </div>
+                        <div>
+                            <button class="jsButtons" onclick="plus4()">+4</button>
+                            <button class="jsButtons" onclick="plus5()">+5</button>
+                            <button class="jsButtons" onclick="plus6()">+6</button>
+                        </div>
+                        <div>
+                            <button class="jsButtons" onclick="plus7()">+7</button>
+                            <button class="jsButtons" onclick="plus8()">+8</button>
+                            <button class="jsButtons" onclick="plus9()">+9</button>
+                        </div>
+                        <div>
+                            <button class="jsButtons" onclick="minus1()">-1</button>
+                            <button class="jsButtons" onclick="minus2()">-2</button>
+                            <button class="jsButtons" onclick="minus3()">-3</button>
+                        </div>
+                        <div>
+                            <button class="jsButtons" onclick="minus4()">-4</button>
+                            <button class="jsButtons" onclick="minus5()">-5</button>
+                            <button class="jsButtons" onclick="minus6()">-6</button>
+                        </div>
+                        <div>
+                            <button class="jsButtons" onclick="minus7()">-7</button>
+                            <button class="jsButtons" onclick="minus8()">-8</button>
+                            <button class="jsButtons" onclick="minus9()">-9</button>
+                        </div>
+                        <div>
+                            <button id="reset1Button" onclick="reset1()">Reset</button>
+                        </div>
+                    </div>
+                </div><!--END BLOCK CONTAINER-->
+            </section><!--END COUNTER EXAMPLE-->
+            <!--BEGIN APPLY A PERCENTAGE EXAMPLE-->
+            <section id="percentExample">
+            <!--<section class="content">-->
+                <div class="block-container">
+                    <div>
+                        <h4 style="margin-bottom: -20px">Enter a starting number:</h4>
+                        <h5><sup>*</sup>you can include up to two decimals:</h5>
+                        <input type="number" step="0.01" id="floatInput" value="">
+                    </div>
+                    <div>
+                        <h4 style="margin-bottom: -20px">Enter a percentage:</h4>
+                        <h5><sup>*</sup>you can include up to two decimals:</h5>
+                        <input type="number" step="0.01" id="percentInput" value="" style="width: 40%">
+                        <span style="font-size: 1.5em;">%</span>
+                    </div>
+                    <h4 style="margin-bottom: 5px">Apply percentage to starting number:</h4>
+                    <div>
+                        <button id="percentButton" onclick="percentDecrease()">Decrease -</button>
+                        <button id="percentButton" onclick="percentIncrease()">Increase +</button>
+                    </div>
+                    <div>
+                        <span style="font-size: 1.0em;"><b>Result:</b></span><br>
+                        <span style="font-size: 1.0em;"><h1 id="result" style="color: rgb(180, 41, 41)"></h1></span>
+                    </div>
+                    <div>
+                        <button id="reset2Button" style="margin-top: 20px" onclick="reset2()">Reset</button>
+                    </div>
+                </div><!--END BLOCK CONTAINER-->
+            </section><!--END APPLY A PERCENTAGE EXAMPLE-->
+            <!--BEGIN TIMER EXAMPLE-->
+            <section id="timerExample">
+            <!--<section class="content">-->
+                <div class="block-container">
+                    <div class="inline-div">
+                        <h4 style="margin-bottom: 5px">Enter hours:</h4>
+                        <input type="number" id="hrsInput" value="0" min="0" max="96">
+                    </div>
+                    <div class="inline-div">
+                        <h4 style="margin-bottom: 5px">Enter minutes:</h4>
+                        <input type="number" id="minsInput" value="0" min="0" max="59">
+                    </div>
+                    <div class="inline-div">
+                        <h4 style="margin-bottom: 5px">Enter seconds:</h4>
+                        <input type="number" id="secsInput" value="0" min="0" max="59">
+                    </div>
+                    <div>
+                        <button id="timerButton" onclick="startTimer()">START</button>
+                        <h1 id="timesUp" style="color: rgb(180, 41, 41); margin-top: 0px;"></h1>
+                    </div>
+                    <div>
+                        <button id="pauseButton" style="margin-top: 10px" onclick="pause()">PAUSE</button>
+                        <button id="resumeButton" style="margin-top: 10px" onclick="resume()">RESUME</button>
+                        <button id="resetTimerButton" style="margin-top: 10px" onclick="resetTimer()">RESET</button>
+                    </div>
+                </div><!--END BLOCK CONTAINER-->
+            </section><!--END TIMER EXAMPLE-->
+        </div><!--END DISPLAY AREA-->
+        <footer><p>Page by F. Rustique, Jr.<br>&copy; 2024</p></footer>
+    </body>
+</html>
