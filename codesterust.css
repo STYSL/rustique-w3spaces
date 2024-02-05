@@ -100,7 +100,8 @@ nav ul li a:active,
 footer {
     background-color: #222222; /* Dark grey background */
     color: #fff; /* White text */
-    padding: 20px; /* Space around the content */
+    padding-top: 20px; /* Space around the content */
+    padding-bottom: 20px;
     text-align: center; /* Center the text */
     position: fixed;  /*Fix the position */
     /*position: absolute;  /* Position relative to the nearest positioned ancestor */
@@ -339,10 +340,14 @@ section {
     }
 }
 
-@media only screen and (min-width: 740px) and (max-height: 360px) and (orientation: landscape) {
+@media only screen and (max-width: 1044px) and (orientation: landscape) {
     header {
         padding: 0px;
         height: 15vh;
+    }
+    
+    #bannerTitle {
+        padding: 0px;
     }
 
     #rightNav {
@@ -353,7 +358,6 @@ section {
     nav {
         right: 12px;
     }
-
 }
 
 
