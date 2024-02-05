@@ -27,7 +27,7 @@ header {
     height: 5vh;
     background-color: #222222; /* Dark grey background */
     color: #fff; /* White text */
-    padding: 15px;  /* Space around the content */
+    padding: 15px 0px 15px 0px;  /* Space around the content */
     text-align: center; /* Center the text */
     top: 0; /* Stick to the top */
     margin-bottom: 0px;
@@ -64,7 +64,7 @@ header {
 nav {
     position: absolute; /* Position absolutely within the header */
     bottom: 0; /* Align with the bottom of the header */
-    right: 45px; /* Right edge of <nav> will be 50px away from right edge of parent element */
+    right: 45px; /* Right edge of <nav> will be 45px away from right edge of parent element */
     z-index: 99;
 }
 
@@ -284,7 +284,6 @@ section {
     background-color: #222222;
 }
 
-
 /*BEGIN MEDIA QUERIES*/
 
 @media only screen and (min-width: 800px) {
@@ -293,70 +292,47 @@ section {
     }
 }
 
-/* For mobile devices with max-width 1024px (like iPad, iPad Mini, large tablets) */
-@media only screen and (max-width: 1024px) {
-    #banner {
-        padding-right: 0px;
-    }
-}
-
-/* For mobile devices with max-width 768px (like iPhone 6/7/8 Plus, iPhone X, small tablets) */
-@media only screen and (max-width: 768px) {
-    #banner {
-        padding-right: 0px;
-    }
-}
-
-/* For mobile devices with max-width 443px */
-@media only screen and (max-width: 443px) {
-    header {
-        width: 100%; /* Full width */
-        padding: 0px;
-        height: 7vh;
-    }
-
-    #bannerTitle {
-        font-size: 2.25em;
-    }
-
-    #rightNav {
-        width: 50px;
-        height: 100%;
-    }
-
-    nav {
-        right: 12px;
-    }
-
-    #videoBanner {
-        padding-top: 0px;
-        padding-bottom: 0px;
-    }   
-
-    .rowTopics {
-        width: 50%;
-        flex-direction: column;
-        justify-content: space-between;  /*Optional: Add some space between the headers */
-    }
-}
-
 @media only screen and (max-width: 1044px) and (orientation: landscape) {
     header {
-        padding: 0px;
+        padding-top: 15px;
         height: 7vh;
     }
     
     #bannerTitle {
-        padding: 0px;
+        padding-bottom: 20px;
     }
 
     #rightNav {
-        width: 50px;
-        height: 100%;
+        width: 80px;
     }
 
     nav {
-        right: 12px;
+        right: 25px;
+    }
+}
+
+/* For mobile devices with max-width 443px */
+@media only screen and (max-width: 443px) {  
+    header {
+        padding: 10px 0px 10px 0px;
+    }
+    
+    #bannerTitle {
+       font-size: 2.0em;
+       padding-top: 10px;
+    }
+    #rightNav {
+        width: 50px;
+    }
+
+    nav {
+        right: 10px;
+    }
+    
+    .rowTopics {
+        width: 50%;
+        flex-direction: column;
+        justify-content: space-between;  /*Optional: Add some space between the headers */
     }
 }
 
