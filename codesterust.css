@@ -147,6 +147,18 @@ footer {
     text-decoration: none;
 }
 
+#bannerText {
+     width: 50%;
+     margin-top: 0px;
+     margin-left: auto;
+     margin-right: auto;
+     padding-bottom: 5px;
+     text-align: center;
+     font-size: .85em;
+     background-color:gold;
+}
+
+
 #top {
     width: 85%;
     margin: 10px auto;
