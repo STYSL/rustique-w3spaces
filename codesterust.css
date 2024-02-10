@@ -27,7 +27,7 @@ header {
     height: 5vh;
     background-color: #222222; /* Dark grey background */
     color: #fff; /* White text */
-    padding: 15px 0px 15px 0px;  /* Space around the content */
+    padding: 10px 0px 10px 0px;  /* Space around the content */
     text-align: center; /* Center the text */
     top: 0; /* Stick to the top */
     margin-bottom: 0px;
@@ -39,7 +39,7 @@ header {
 
 #bannerTitle {
     position: absolute; /* Position absolutely within the header */
-    padding-top: 20px;
+    padding-top: 10px;
     width: 100%;
     height: 100%; /* Full height */
     text-align: center; /* Center the text */
@@ -56,7 +56,7 @@ header {
     position: absolute; /* Position absolutely within the header */
     top: 0; /* Align with the top of the header */
     right: 0; /* Align with the right edge of the header */
-    width: 90px;
+    width: 80px;
     height: 100%; /* Full height */
     background-color: darkgreen;
 }
@@ -100,13 +100,13 @@ nav ul li a:active,
 footer {
     background-color: #222222; /* Dark grey background */
     color: #fff; /* White text */
-    padding-top: 20px; /* Space around the content */
-    padding-bottom: 20px;
+    padding-top: 10px; /* Space around the content */
+    padding-bottom: 10px;
     text-align: center; /* Center the text */
     position: fixed;  /*Fix the position */
     /*position: absolute;  /* Position relative to the nearest positioned ancestor */
     width: 100%; /* Full width */
-    height: 5vh;
+    height: 4vh;
     bottom: 0; /* Stick to the bottom */
     display: flex; /* Use Flexbox */
     align-items: center; /* Center items vertically */
@@ -305,9 +305,9 @@ section {
     }
 }
 
-@media only screen and (max-width: 1044px) and (orientation: landscape) {
+@media only screen and (max-width: 2044px) and (orientation: landscape) {
     header {
-        padding-top: 15px;
+        padding-top: 10px;
         height: 5vh;
     }
     
@@ -334,6 +334,7 @@ section {
        font-size: 2.0em;
        padding-top: 10px;
     }
+
     #rightNav {
         width: 50px;
     }
