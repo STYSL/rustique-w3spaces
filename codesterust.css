@@ -30,7 +30,6 @@ header {
     padding: 10px 0px 10px 0px;  /* Space around the content */
     text-align: center; /* Center the text */
     top: 0; /* Stick to the top */
-    margin-bottom: 0px;
     display: flex; /* Use Flexbox & next 3 properties */
     flex-direction: column;
     align-items: center; /* Center items vertically */
@@ -97,22 +96,6 @@ nav ul li a:active,
     color:#222222;
 }
 
-footer {
-    background-color: #222222; /* Dark grey background */
-    color: #fff; /* White text */
-    padding-top: 10px; /* Space around the content */
-    padding-bottom: 10px;
-    text-align: center; /* Center the text */
-    position: fixed;  /*Fix the position */
-    /*position: absolute;  /* Position relative to the nearest positioned ancestor */
-    width: 100%; /* Full width */
-    height: 4vh;
-    bottom: 0; /* Stick to the bottom */
-    display: flex; /* Use Flexbox */
-    align-items: center; /* Center items vertically */
-    justify-content: center; /* Center items horizontally */
-}
-
 #videoBanner {
     text-align: left;
     background-color:gold;
@@ -161,10 +144,12 @@ footer {
 
 
 #top {
-    width: 85%;
-    margin: 10px auto;
+    width: 75%;
+    margin: 0px auto;
     height: auto;
-    border: 2px solid rgb(224, 224, 224);
+    background-color: rgb(224, 224, 224);
+    /*border: 2px solid rgb(224, 224, 224);*/
+    border-radius: 20px 20px 0px 0px;
 }
 
 .rowTopics {
@@ -172,6 +157,7 @@ footer {
     width: 360px;
     margin: 0 auto;
     flex-direction: row;
+    padding-left: 20px;
     /*justify-content: space-between;  Optional: Add some space between the headers */
 }
 
@@ -190,8 +176,8 @@ h2 {
     margin-top: 0px;
     margin-left: auto; 
     margin-right: auto; 
-    /*background-color: #222222;
-    border:rgb(62, 62, 62) solid 1px;*/
+    background-color: rgb(224, 224, 224);
+    border-radius: 0px 0px 20px 20px;
 }
 
 #counterExample, #percentExample, #timerExample {
@@ -202,6 +188,7 @@ section {
     display: flex;
     width: 85%;
     margin-top: 15px;
+    margin-bottom: 15px;
     margin-left: auto; 
     margin-right: auto; 
     background-color: #222222;;
@@ -295,6 +282,22 @@ section {
 #reset1Button:active, #reset2Button:active, #percentButton:active, #timerButton:active,
 #pauseButton:active, #resumeButton:active, #reset3Button:active {
     background-color: #222222;
+}
+
+footer {
+    background-color: #222222; /* Dark grey background */
+    color: #fff; /* White text */
+    padding-top: 10px; /* Space around the content */
+    padding-bottom: 10px;
+    text-align: center; /* Center the text */
+    position: fixed;  /*Fix the position */
+    /*position: absolute;  /* Position relative to the nearest positioned ancestor */
+    width: 100%; /* Full width */
+    height: 4vh;
+    bottom: 0; /* Stick to the bottom */
+    display: flex; /* Use Flexbox */
+    align-items: center; /* Center items vertically */
+    justify-content: center; /* Center items horizontally */
 }
 
 /*BEGIN MEDIA QUERIES*/
