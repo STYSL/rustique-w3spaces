@@ -64,7 +64,7 @@ header {
 nav {
     position: absolute; /* Position absolutely within the header */
     bottom: 0; /* Align with the bottom of the header */
-    right: 45px; /* Right edge of <nav> will be 45px away from right edge of parent element */
+    right: 25px; /* Right edge of <nav> will be 45px away from right edge of parent element */
     z-index: 99;
 }
 
