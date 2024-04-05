@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', function() {
-    var images = ['rustavatar.png', 'stysl_logo_rope.png']; // Add the paths to your images here
+    var images = ['rustavatar.png', 'stysl_logo_rope.png', 'stysl_logo_2024.png']; // Add the paths to your images here
     var currentImage = 0;
     var imgElement = document.getElementById('changing-image');
 

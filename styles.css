@@ -5,6 +5,7 @@ body * {
   
   html,
   body {
+    /*background-color: #262626;*/
     padding: 0;
     margin: 0;
     scroll-behavior: smooth;
